@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Aforance;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,8 +13,8 @@ class PolicyType extends Model
     public $timestamps = false;
 
 
-    public static function getByIndentifier($identifier){
-        return self::where('identifier', $identifier)->first();
+    public static function getByIdentifier($identifier){
+        return self::where('id', $identifier)->first();
     }
 
 }
